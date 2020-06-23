@@ -1,0 +1,41 @@
+.container {
+  background-color: #17223b;
+  color: white;
+}
+
+.userInformation {
+  display: block;
+  margin: auto;
+  width: 50%;
+  height: 0;
+  padding-bottom: 50%;
+}
+
+.profilePic {
+  display: block;
+  margin: auto;
+  width: 100px;
+  height: 100px;
+}
+
+.userInformation p{
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+}
+
+.userInformation a {
+  display: inline;
+}
+
+.ProjectsAndUsers {
+  height: 70vh;
+  padding-left: 5%;
+  background-color: #2e384e;
+}
+
+.ProjectsAndUsers p {
+  margin: 5% auto;
+  text-align: left;
+  font-size: 1.5em;
+}

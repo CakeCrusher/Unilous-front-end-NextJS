@@ -1,0 +1,57 @@
+.container {
+  display: block; 
+  width: 50%; 
+  background-color: ivory; 
+  margin: 20px auto;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 20px; 
+  overflow: hidden;
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
+
+.imgStyle {
+  width: 100%; 
+  object-fit: fill;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.textBox {
+  padding: 20px;
+  overflow: auto;
+  display: grid;
+}
+.date {
+  opacity: 0.8;
+  margin: 0;
+  margin-top: 10px;
+  justify-self: end;
+}
+.blackLink {
+  color: #282828;
+}
+
+.title {
+  text-align: left;
+  margin-left: 0;
+}
+.authorContainer {
+  opacity: 0.8;
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  color: #282828;
+  margin: 0;
+  padding: 0;
+}
+.userIcon {
+  justify-self: start;
+  width: 15px;
+  justify-self: center;
+}
+.description {
+  color: #282828;
+}

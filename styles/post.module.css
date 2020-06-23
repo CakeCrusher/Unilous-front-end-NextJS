@@ -1,0 +1,194 @@
+.postWrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 8px auto;
+    background-color: white;
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    color: #282828;
+    box-shadow: 0px 0px 4px 0px #aaa;
+}
+.postHover:hover {
+    cursor: pointer;
+}
+.postColorIndicator {
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    background-color: white; 
+}
+.postContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+}
+.postHeaderWrapper {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.postHeaderStretch {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto;
+    opacity: 0.7;
+    justify-content: end;
+}
+/* .postHeader {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: auto auto;
+    opacity: 0.7;
+} */
+.postHeader {
+    display: grid;
+    grid-template-columns: auto auto;
+    opacity: 0.7;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.PHUserStretch {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 25px auto;
+    align-items: center;
+    color: #282828;
+    margin-right: 20px;
+}
+.PHUser {
+    justify-self: start;
+    display: grid;
+    grid-template-columns: 25px auto;
+    align-items: center;
+    color: #282828;
+}
+.PHUIcon {
+    width: 15px;
+    margin-left: 5px;
+}
+.PHDate {
+    justify-self: end;
+    margin-right: 10px;
+}
+.postTitle {
+    text-align: left;
+    margin: 0;
+    padding-left: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    color: #282828;
+}
+.postDescription {
+    padding-left: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    max-height: 250px;
+    overflow: hidden;
+    opacity: 0.9;
+    color: #282828;
+    white-space: pre-wrap;
+}
+.postSkillsContainer {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 5px;
+    justify-content: left;
+}
+.postSkillInsContainer {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    grid-template-columns: auto 70px;
+    border-radius: 20px;
+    border: 2px solid #282832;
+    background-color: #282832;
+    margin-bottom: 5px;
+    overflow: hidden;
+    opacity: 0.9;
+    color: #282828;
+}
+.PSIName {
+    height: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin: 0;
+    color: white;
+}
+.PSIStats {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: white;
+}
+.postUtilitiesContainer {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: repeat(2, auto);
+    margin-left: 5px;
+}
+.PUIconContainer {
+    align-items: center;
+    /* padding: 5px; */
+    margin: 3px;
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid white;
+    display: grid;
+}
+.PUIconContainer:hover {
+    cursor: pointer;
+    border: 2px solid #c8c8c8;
+    transition: border 0.1s;
+}
+.PUIcon {
+    width: 20px;
+    margin: auto;
+}
+
+.postWrapperSm {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 8px auto 20px;
+    background-color: white;
+    border-radius: 3px;
+    overflow: hidden;
+    color: #282828;
+    box-shadow: 0px 0px 4px 0px #aaa;
+}
+.postSmRemove {
+    align-self: start;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 3px;
+    border-bottom-left-radius: 5px;
+    border-bottom: 2px solid #f1f1f1;
+    border-left: 2px solid #f1f1f1;
+    overflow: hidden;
+}
+.postSmRemove:hover {
+    background-color: rgb(254,52,77);
+    color: white;
+    transition: background-color 0.25s, color 0.25s;
+    cursor: pointer;
+}

@@ -1,0 +1,245 @@
+.projectImageWrapper {
+    width: 100%;
+    height: 300px;
+    display: grid;
+}
+.projectImageContainer {
+    margin: auto;
+    width: 100%;
+    height: 300px;
+}
+.projectImage {
+    margin: auto;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    border: 2px solid #282828;
+    background-color: #383838;
+}
+
+.inputTitle {
+    border: none;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px 0;
+    margin: 5px 0;
+}
+.textInputContainer {
+    position: relative;
+}
+.textInput {
+    margin: 0;
+    transform: translateX(-2px);
+    padding: 0;
+    margin-bottom: 20px;
+    opacity: 0.9;
+    white-space: pre-wrap;
+    line-height: 25px;
+    font-size: 16px;
+    width: 100%;
+    height: auto;
+    border: none;
+    resize: vertical;
+    border: 2px dashed #282828;
+}
+.textInputBare {
+    background: url(/svg/textB.svg) center center no-repeat;
+    background-size: 50px;
+
+}
+.textSetButton {
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    right: -2px;
+    border: none;
+    background-color: rgb(52,166,95);
+    font-size: 20px;
+    color: white;
+    border-bottom-left-radius: 25px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.colorTitle {
+    margin-top: 30px;
+    text-align: start;
+}
+
+/*----------------------------*/
+/*-----------BUTTONS----------*/
+/*----------------------------*/
+.inputOptionsContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.inputOption {
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    justify-content: center;
+    padding: 10px;
+    outline: none;
+    background-color: rgb(52,166,95);
+    border: none;
+    border-radius:5px;
+    box-shadow: 0 9px #95a5a6;
+    text-align: center;
+    cursor: pointer;
+    font-size:20px;
+    color: white;
+    width: 47%;
+    margin-bottom: 20px;
+}
+
+  
+.inputOption:hover{
+    background-color: #2ecc71;
+}
+
+.inputOption:active {
+    background-color: #2ecc71;
+    box-shadow: 0 5px #95a5a6;
+    transform: translateY(4px);
+}
+.inputIcon {
+    width: 25px;
+}
+@media only screen and (max-width: 800px) {
+    .inputOption {
+        display: grid;
+    }
+    .inputIcon {
+        /* margin: auto; */
+        width: 30px;
+    }
+}
+.submitButton {
+    /* position: fixed; */
+    z-index: 4;
+    font-size:24px;
+    margin: 0;
+    padding: 0;
+    /* bottom: 0; */
+    width: 100%;
+    border: none;
+    background-color: rgb(52,166,95);
+    color: white;
+    cursor: pointer;
+}
+
+.submitPadding {
+    height: 100px;
+}
+
+/*----------------------------*/
+/*--------COLOR SCHEME--------*/
+/*----------------------------*/
+.colorSchemeContainer {
+    margin-top: 30px;
+}
+
+.colorSchemeTitle {
+    text-align: left;
+    margin: 0;
+}
+
+.colorScheme {
+    display: flex;
+    list-style: none;
+    text-align: left;
+    padding: 0;
+}
+
+.colorCircle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 2px;
+    transition: all 0.1s ease-out;
+}
+.colorCircle:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/*----------------------------*/
+/*---------SUBMIT BTN---------*/
+/*----------------------------*/
+.btnSubmit {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: none;
+  }
+.skillInputButton {
+    grid-column: 1/3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5px;
+    font-size:20px;
+    width: 100%;
+    background-color: rgb(52,166,95);
+    color: white;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+/*----------------------------*/
+/*----------SIDEBAR-----------*/
+/*----------------------------*/
+
+.skillInput {
+    width: 100%;
+    font-size: 16px;
+    margin: 0;
+    border: 2px dashed #282828;
+    transform: translateX(-2px);
+}
+.skillAmtContainer {
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+}
+.outOf {
+    background-color: blue;
+}
+.skillAmtInput {
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    justify-self: end;
+    text-align: end;
+    font-size: 16px;
+    border: none;
+    margin: 0;
+    border: 2px dashed #282828;
+    transform: translateX(-2px);
+}
+.skillInputContainer {
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    align-items: center;
+}
+.skillNameContainer {
+    width: 80%;
+    margin: 0;
+    pad: 0;
+}
+.skillAmtContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+@media only screen and (max-width: 800px) {
+    .skillAmtContainer {
+        column-gap: 10px;
+    }
+}

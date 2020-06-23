@@ -1,0 +1,300 @@
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 800px) {
+  .wrapper {
+    width: 104%;
+    display: flex;
+    justify-content: none;
+  }
+}
+.container {
+    width: 50%;
+    margin-left: 10%;
+    /* background-color: #282828; */
+}
+.lgPara {
+    font-size: 20px;
+    opacity: 0.85;
+}
+.button {
+    cursor: pointer;
+    border-radius: 3px;
+    border: 2px solid;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+}
+.btnDark {
+    background-color: #282828;
+    color: white;
+    border-color: #282828;
+}
+.btnLight {
+    background-color: white;
+    color: #282828;
+    border-color: white;
+}
+.btnLD {
+    background-color: #282828;
+    color: white;
+    border-color: white;
+}
+.btnDL {
+  background-color: white;
+  color: #282828;
+  border-color: #282828;
+}
+.linkDark {
+    color: #282828;
+    font-size: 20px;
+}
+.linkLight {
+    color: white;
+}
+
+
+.rowContainer {
+  width: 70%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+  margin-bottom: 50px;
+}
+@media only screen and (max-width: 800px) {
+  .rowContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0px;
+  }
+}
+.card {
+    width: 70%;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+@media only screen and (max-width: 800px) {
+    .card {
+        width: 85%;
+        height: 90%;
+        border-radius: 5px;
+        display: flex;
+        flex-flow: column;
+        padding: 10px;
+        margin: auto;
+    }
+}
+  
+  .cardHeading {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  
+  .cardContent {
+    flex: 1;
+    margin-bottom: 25px;
+    text-align: left;
+    line-height: 1.5;
+    color: grey;
+  }
+  
+  .cardList {
+    flex: 1;
+    margin-bottom: 25px;
+    text-align: left;
+    line-height: 1.5;
+  }
+  
+  .cardListItem {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .cardListNumber {
+    font-weight: bold;
+    margin: 0px 15px;
+  }
+  
+  .cardFooter {
+    cursor: pointer;
+  }
+  
+
+
+.leftAlign {
+  text-align: left;
+  margin-left: 0;
+}
+.imageBox {
+  display: flex;
+  align-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 800px) {
+  .imageBox {
+    display: flex;
+    align-content: center;
+    justify-self: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.textBox {
+  margin: auto;
+}
+
+.narrow {
+  width: 70%;
+}
+
+@media only screen and (max-width: 800px) {
+  .narrow {
+    width: 90%;
+  }
+}
+
+.containerWide p, .containerNarrow p {
+  margin: 40px 0px;
+}
+
+.adjacentHalfWidthButtons {
+  width: 50%; 
+  margin: 0px 2px;
+}
+@media only screen and (max-width: 800px) {
+  .adjacentHalfWidthButtons {
+    width: 100%; 
+    margin: 0px 2px;
+  }
+}
+
+.halfWidthButton {
+  width: 50%; 
+}
+
+.buildYourTeamCreateYourProject {
+  padding: 10px;
+  background-color: #282828;
+  color: white; 
+}
+
+.buildYourTeamImage {
+  display: flex;
+  align-content: center;
+}
+
+.buildYourTeamInnerBox {
+  background-color: white;
+  padding: 10%;
+  border-radius: 10px;
+}
+
+.postContaiener {
+  justify-self: start;
+  width: 70%;
+}
+@media only screen and (max-width: 800px) {
+  .postContaiener {
+    margin: auto;
+    justify-self: center;
+    width: 90%;
+  }
+}
+
+.userBoxContainer {
+  width: 100%;
+  border: 2px solid #282828;
+  border-radius: 3px;
+
+}
+.userHeader {
+  background-color: #282828;
+  display: grid;
+  grid-template-columns: 30px auto;
+  padding-left: 20px;
+}
+.logo {
+  width: 30px;
+  margin: auto;
+}
+.userTitle {
+  color: white;
+  text-align: start;
+}
+.usersContainer {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  justify-content: space-evenly;
+  row-gap: 15px;
+}
+@media only screen and (max-width: 800px) {
+  .usersContainer {
+    grid-template-columns: auto;
+  }
+}
+.userIns {
+  color: #282828
+}
+.userPrimary {
+  font-size: 20px;
+}
+.userSecondary {
+  opacity: 0.85;  
+}
+.userFooter {
+  background-color: #282828;
+  padding-right: 20px;
+  display: grid;
+  justify-content: end;
+  color: white;
+}
+
+/*----------------------------*/
+/*-------- JEFF'S CSS ------- */
+/*----------------------------*/
+.rowContainer {
+  z-index: 1;
+}
+
+.starsSVG {
+  position: absolute;
+  left: 0;
+  margin-top: 20px;
+  max-height: 100%;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.leftAlign {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.iconTopLeft {
+  display: inline-block;
+  vertical-align: middle;
+  height: 30px;
+  margin-right: 7px;
+}
+/*----------------------------*/
+/*-------- JEFF'S CSS ------- */
+/*----------------------------*/

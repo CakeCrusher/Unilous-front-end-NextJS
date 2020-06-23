@@ -1,0 +1,66 @@
+.test {
+    color: gold;
+}
+
+.contactsContainer {
+    width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    row-gap: 5px;
+    column-gap: 5px;
+    grid-template-columns: 1fr 1fr;
+}
+@media only screen and (max-width: 800px) {
+    .contactsContainer {
+        width: 95%;
+        grid-template-columns: 1fr;
+    }
+}
+.contactContainer {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: start;
+    border: 2px solid #282828;
+    border-radius: 3px;
+}
+.contactHeader {
+    background-color: #282828;
+    padding-left: 10px;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+}
+.contactHeader:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+.CHIcon {
+    width: 30px;
+    margin: 10px;
+    margin-right: 5px;
+}
+.CHName {
+    color: white;
+    margin: auto;
+    text-align: flex-start;
+}
+.profileImage {
+    margin: auto;
+    width: 100%;
+}
+.contactInfoContainer {
+    display: flex;
+    flex-direction: column;
+}
+.contactInfo {
+    width: auto;
+    justify-self: start;
+    padding: 10px;
+    padding-left: 10px;
+    text-align: start;
+}

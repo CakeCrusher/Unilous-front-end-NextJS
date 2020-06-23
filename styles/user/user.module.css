@@ -1,0 +1,328 @@
+/* ALL */
+.userWrapper {
+    width: 80%;
+    min-width: 250px;
+    height: 50px;
+    margin: auto;
+    margin-right: 5%;
+}
+.userContainer {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    
+    border-radius: 3px;
+    border: 2px solid #484848;
+    display: grid;
+    background-color: white;
+}
+.userOptionsSplitter {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #484848;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.userIconContainer {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    background-color: #484848;
+    display: grid;
+}
+.SUH:hover {
+    cursor: pointer;
+    background-color: #484848;
+    color: white;
+    transition: background-color 0.1s, color 0.1s;
+}
+
+/* LOGGED */
+.UICH:hover {
+    cursor: pointer;
+    background-color: #686868;
+    transition: background-color 0.1s;
+}
+.LGDUserContainer {
+    grid-template-columns: 20px auto 0px;
+    width: auto;
+}
+.userBanner {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 10px 110px 3fr 3fr 3fr 1fr;
+}
+.userUsernameContainer {
+    grid-column: 1/6;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    color: #484848;
+}
+.userUsername {
+    margin: auto;
+}
+.userUsernameIcon {
+    margin: auto;
+    color: white;
+}
+.PNContainer {
+    display: grid;
+    grid-template-columns: auto 0px;
+    justify-content: center;
+}
+.PNBubble {
+    position: relative;
+    text-align: center;
+    color: white;
+    left: -10px;
+    top: 5px;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(254,52,77);
+    border-radius: 20px;
+}
+.userUtilityOption {
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+.userUtilityOption:hover {
+    cursor: pointer;
+    background-color: #9f9f9f;
+    transition: background-color 0.1s;
+}
+.UUOSelected {
+    background-color: #484848;
+}
+.UUAddPost {
+    color: #484848;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 37px auto;
+}
+.UUAPIcon {
+    width: 17px;
+    margin: auto;
+    margin-left: 20px;
+}
+.UUAPText {
+    margin: auto;
+    margin-left: 5px;
+}
+.UUIcon {
+    height: 25px;
+    margin: auto;
+}
+.UULogout:hover {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(254,52,77);
+}
+.UULogoutIcon {
+    height: 15px;
+    margin: auto;
+}
+.userNotificationBubble {
+    position: relative;
+    left: -25px;
+    height: 25px;
+    width: 25px;
+    background-color: rgb(254,52,77);
+    border-bottom-left-radius: 3px;
+}
+.userNotificationBubble:hover {
+    cursor: pointer;
+    background-color: rgb(254,82,107);
+    transition: background-color 0.1s;
+}
+.UUUtilitiesSplitter {
+    grid-column: 1/4;
+    width: 100%;
+    height: 2px;
+    background-color: #484848;
+}
+.UUContentContainer {
+    grid-column: 1/4;
+    width: 100%;
+    max-height: 500px;
+    overflow-y: scroll;
+    background-color: #484848;
+    color: white;
+    display: block;
+}
+
+/* NL */
+.NLUserContainer {
+    grid-template-columns: 47% 6% 47%;
+}
+.userOptionContainer {
+    color: #282828;
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+.userOptionContainer:hover {
+    cursor: pointer;
+    background-color: #484848;
+    color: white;
+    transition: background-color 0.1s, color 0.1s;
+}
+.userOptions {
+    margin: auto;
+}
+.userOptionsSplitter {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #484848;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.userIconContainer {
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    background-color: #484848;
+    display: grid;
+}
+.userIcon {
+    margin: auto;
+    width: 30px;
+}
+.userFormContainer {
+    /* grid-column: 1/4; */
+    width: 100%;
+    /* background-color: #484848; */
+}
+.userForm {
+    width: 90%;
+    margin: auto;
+    text-align: start;
+}
+.UFLabel {
+    text-align: start;
+}
+.UFInput {
+    width: 95%;
+    border: none;
+    color: #484848;
+    padding-left: 5px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.UFSubmit {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    background-color: rgb(52,166,95);
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+.UFSubmit:hover {
+    cursor: pointer;
+    background-color: rgb(72,186,115);
+    transition: background-color 0.1s ;
+}
+
+.notificationContainer {
+    background-color: white;
+    width: 90%;
+    border-radius: 3px;
+    margin: auto;
+    display: grid;
+    overflow: hidden;
+}
+.notificationHeader {
+    width: 100%;
+    display: grid;
+    padding: 5px;
+    grid-template-columns: auto auto;
+    justify-content: start;
+}
+.NUserContainer {
+    display: grid;
+    grid-template-columns: 20px auto;
+    color: #282828;
+}
+.NUserIcon {
+    width: 15px;
+    margin: auto;
+}
+.NUser {
+    margin: 0;
+}
+.NUserLabel {
+    margin-right: 5px;
+    justify-self: end;
+}
+.NSkillContributions {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 100%;
+}
+.NProposedHelp {
+    display: grid;
+    margin:auto;
+    background-color: #282828;
+    border-radius: 3px;
+    padding: 3px;
+    margin-bottom: 5px;
+    padding-left: 6px;
+    padding-right: 6px;
+    grid-template-columns: auto auto;
+}
+.NSkillIns {
+    color: white;
+    border-radius: 10px;
+    justify-self: end;
+    margin-right: 3px;
+}
+.NSkillProp {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 3px;
+    margin: auto;
+    margin-left: 3px;
+    color: rgb(52,166,95);
+    font-weight: bold;
+}
+.notificationChoice {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.notificationOption {
+    width: 100%;
+    color: white;
+    margin: 0;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.notificationEmail {
+    width: 100%;
+    margin: 0;
+    color: white;
+    background-color: rgb(52,166,95);
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.NMessage {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 10px;
+    text-align: start;
+    padding: 5px;
+    border: 2px solid #282828;
+    border-radius: 3px;
+    color: #282828;
+}

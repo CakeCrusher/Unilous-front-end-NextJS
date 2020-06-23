@@ -1,0 +1,61 @@
+.imageUploadContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+.imageInput {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    top: -2px;
+    left: -2px;
+    border: 2px dashed #282828;
+    opacity: 0;
+    cursor: pointer;
+}
+.imageLabel {
+    position: absolute;
+    z-index: 2;
+    display: grid;
+    /* border-radius: 3px; */
+    width: 100%;
+    height: 100%;
+    top: -2px;
+    left: -2px;
+    border: 2px dashed #282828;
+}
+.labelItemsContainer {
+    margin: auto;
+    display: grid;
+}
+.imageIcon {
+    width: 50px;
+    margin: auto;
+}
+.imageInContainer {
+    margin: auto;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+.submitButton {
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    right: -2px;
+    top: -2px;
+    border: none;
+    background-color: rgb(52,166,95);
+    font-size: 20px;
+    color: white;
+    border-bottom-left-radius: 25px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.submitButton:hover {
+    transition: opacity 0.1s;
+    opacity: 1;
+}

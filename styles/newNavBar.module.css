@@ -1,0 +1,227 @@
+.container {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #282828;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+}
+.brandContainer {
+    display: flex;
+    flex-direction: row;
+}
+.name {
+    font-weight: normal;
+    color: white;
+}
+.icon {
+    width: 40px;
+}
+.searchContainer {
+    display: grid;
+    grid-template-columns: 40px auto;
+    border-radius: 70px;
+    overflow: hidden;
+    width: 40%;
+    height: 70%;
+}
+.magnifier {
+    width: 15px;
+    margin: auto;
+}
+.searchBtn {
+    border: none;
+    background-color: #484848;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+.searchBar {
+    width: 100%;
+    border: none;
+    background-color: #484848;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+.CPContainer {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+}
+.plus {
+    width: 15px;
+    margin: auto;
+}
+.CPText {
+    color: white;
+}
+.userWrapper {
+    height: 70%;
+    width: 300px;
+}
+.userContainer {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 100%;
+    /* height: 70%; */
+    background-color: #323232;
+    align-items: center;
+    justify-items: center;
+    border-radius: 3px;
+    width: 100%;
+}
+.userOption {
+    background-color: #323232;
+    border: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+.notifContainer {
+    display: grid;
+    grid-template-columns: 25px auto ;
+    cursor: pointer;
+}
+.titleBell {
+    width: 30px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bell {
+    width: 15px;
+    margin: auto;
+}
+.nofifCount {
+    color: white;
+}
+.userInfoContainer {
+    display: grid;
+    grid-template-columns: auto 20px;
+    cursor: pointer;
+}
+.username {
+
+}
+.DDArrow {
+    width: 10px;
+    margin: auto;
+}
+.userDD {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    top: -5px;
+    padding-top: 5px;
+    background-color: #323232;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    max-height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.user {
+    width: 15px;
+    margin: auto;
+}
+.signOption {
+    background-color: #323232;
+    border: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+
+.containerM {
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    background-color: #282828;
+    color: white;
+    align-items: center;
+    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: 25px 25px 1fr 25px 25px;
+    column-gap: 15px;
+    /* grid-template-rows: 50px auto auto; */
+}
+.brandContainerM {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    height: 50px;
+}
+.navItem {
+    background-color: #282828;
+    border: none;
+    cursor: pointer;
+    justify-self: end;
+}
+.navIcon {
+    width: 25px;
+}
+.subNavContainer {
+    grid-column: 1/6;
+    width: 100%;
+    background-color: #282828;
+    height: 50px;
+    display: grid
+}
+.searchContainerM {
+    display: grid;
+    grid-template-columns: 40px auto;
+    border-radius: 70px;
+    background-color: #484848;
+    overflow: hidden;
+    width: 90%;
+    height: 70%;
+    margin: auto;
+}
+.menuContainer {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    column-gap: 5px;
+}
+.moreContainer {
+    background-color: #282828;
+    border: 2px solid #323232;
+}
+.titleMore {
+    width: 60px;
+}
+.more {
+    width: 40px;
+}
+.SNIContainer {
+    grid-column: 1/6;
+    background-color: #282828;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    max-height: 300px;
+    overflow-y: scroll;
+    align-self: flex-start;
+}
+.notifContainerM {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: 25px auto;
+    justify-content: center;
+}
+.ddOption {
+    text-align: start;
+    margin-left: 10%;
+}

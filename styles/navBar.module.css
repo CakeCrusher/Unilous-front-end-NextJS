@@ -1,0 +1,335 @@
+.HWM {
+    display: block;
+}
+.SWM {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .HWM {
+        display: block;
+    }
+    .SWM {
+        display: none;
+    }
+}
+.alertBarContainer {
+    width: 100%;
+    padding: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+    display: grid;
+    grid-template-columns: 95% 5%;
+}
+.message {
+    margin: auto;
+}
+.close {
+    margin: auto;
+    opacity: 0.8;
+}
+.close:hover {
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.1s;
+}
+.navContainer {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+/* .alertBarContainer {
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    white-space: pre-wrap;
+} */
+/* .alertBarContainer:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.1s;
+} */
+.navBarContainer {
+    /* position: fixed; */
+    position: relative;
+    width: 100%;
+    /* height: 70px; */
+    text-align: center;
+    background-color: #f5f5fa;
+    color: white;
+    border-bottom: 2px solid #f0f0f5;
+    display: grid;
+    grid-template-columns: 10% 50% 40%;
+}
+.iconContainer {
+    align-self: center;
+    justify-self: end;
+}
+.navBarIcon {
+    height: 50px;
+}
+
+.searchBar {
+    justify-self: start;
+    margin: 20px;
+    height: 30px;
+    width: 90%;
+    border-radius: 15px;
+    border-radius: 3px;
+    border: 2px #dfdfdf solid;
+    justify-self: start;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 30px 2px 1fr;
+}
+.SBSeparator {
+    grid-column: 1/6;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 2px;
+    background-color: #dfdfdf;
+}
+.enterSearch {
+    position: relative;
+    z-index: 1;
+    height: 30px;
+    width: 100%;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 100%;
+}
+.searchHr {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background-color: #efefef;
+}
+.searchIcon {
+    position: relative;
+    z-index: 1;
+    margin: auto;
+    height: 60%;
+}
+.searchingFor {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    background-color: white;
+    /* border: 2px #484848 solid; */
+    padding-top: 4px;
+    color: #282828;
+    font-weight: bold;
+}
+.searchHover:hover {
+    background-color: #efefef;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+.searchInput {
+    position: relative;
+    z-index: 1;
+    border: none;
+    font-size: 15px;
+    background-color: white;
+    color: #282828;
+} 
+.searchDescription {
+    text-align: start;
+    margin: 0;
+    margin-left: 48px;
+    
+}
+.searchSuggestion {
+    text-align: start;
+    padding-bottom: 5px;
+    border-right: 2px solid #dfdfdf;
+    border-left: 2px solid #dfdfdf;
+    padding-left: 30px;
+}
+.searchSuggestion:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+    transition: background-color 0.1s;
+}
+
+.filterDD {
+    position: relative;
+    grid-column: 5/6;
+    top: -15px;
+    padding-top: 15px;
+    background-color: white;
+    z-index: 0;
+    border-bottom: 2px solid #dfdfdf;
+    border-right: 2px solid #dfdfdf;
+    border-left: 2px solid #dfdfdf;
+}
+.filterOption {
+    color: #282828;
+    text-align: start;
+    padding-left: 5px;
+
+    padding-bottom: 5px;
+}
+.filterOption:hover {
+    cursor: pointer;
+    background-color: #f5f5f5;
+    transition: background-color 0.1s;
+}
+
+@media only screen and (max-width: 800px) {
+    .navContainerM {
+        position: fixed;
+        left: 0;
+        top: 0;
+        /* overflow: hidden; */
+        width: 100%;
+        z-index: 2;
+    }
+    .navBarContainerM {
+        position: relative;
+        background-color: #f5f5fa;
+        border-bottom: 2px solid #f0f0f5;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .NBBrand {
+        justify-self: start;
+        color: #282828;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: flex-start;
+    }
+    .NBLogo {
+        width: 2.5rem;
+        margin: auto;
+        margin-left: 10px
+    }
+    .NBPrimaryUtilities {
+        justify-self: end;
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: flex-end;
+    }
+    .PUSearch {
+        width: 1.7rem;
+        margin: auto;
+        margin-right: 20px;
+    }
+    .PUHamburgerContainer {
+        display: grid;
+        grid-template-columns: 1fr 0px;
+    }
+    .PUHamburger {
+        width: 1.7rem;
+        margin: auto;
+        margin-right: 30px;
+    }
+    .navBarSubContainer {
+        position: relative;
+        background-color: #f5f5fa;
+        border-bottom: 2px solid #f0f0f5;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
+        column-gap: 5px;
+    }
+    .navBarSubContainerM {
+        position: relative;
+        background-color: #f0f0f5;
+        border-bottom: 2px solid #f0f0f5;
+        display: grid;
+        /* flex-direction: row; */
+        grid-template-columns: repeat(6, auto);
+        /* justify-content: stretch; */
+        column-gap: 3px;
+    }
+    .loginBar {
+        grid-template-columns: 2fr 2fr 1fr;
+    }
+
+    .searchBar {
+        justify-self: center;
+        /* margin: auto; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 30px;
+        width: 80%;
+        border-radius: 3px;
+        /* border: 2px #dfdfdf solid; */
+        background-color: white;
+        border: none;
+        display: grid;
+        grid-template-columns: 30px 2px 1fr;
+    }
+    .searchInput {
+        height: 70%;
+    }
+    .PNContainer {
+        display: grid;
+        grid-template-columns: auto 0px;
+        justify-content: center;
+    }
+    .notificationItem {
+        height: 30px;
+        width: 100%;
+        color: #484848;
+        margin: auto;
+    }
+    .PNBubble {
+        position: relative;
+        text-align: center;
+        color: white;
+        left: -15px;
+        width: 20px;
+        height: 20px;
+        background-color: rgb(254,52,77);
+        border-radius: 20px;
+    }
+    .PNBubbleHamburger {
+        left: -30px;
+        top: 5px;
+    }
+    .menuItem {
+        height: 30px;
+        width: 100%;
+        background-color: #f5f5fa;
+        color: #484848;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menuItemSelected {
+        height: 30px;
+        width: 100%;
+        background-color: #282828;
+        color: white;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .menuItemLogout {
+        height: 20px;
+        width: 50px;
+        background-color: #f5f5fa;
+        margin: auto;
+        padding: 5px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .menuModalContainer {
+        height: 80vh;
+        background-color: #282828;
+        border-bottom-left-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom: 5px solid #282828;
+        color: white;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    .moreLink {
+        color: white;
+        text-align: start;
+    }
+}

@@ -1,0 +1,328 @@
+html, body, input, button, textarea {
+    font-family: 'Open Sans', sans-serif;
+    color: #282828;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fdfdfd;
+}
+
+h1,h2,h3,h4,h5 {
+    margin: 10px;
+    text-align: center;
+}
+
+.nm {
+    margin: 0;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.banner {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    height: 80px;
+    z-index: 1;
+}
+
+.posts-container {
+    width: 70%;
+    border-left: 5px #484848 solid;
+    border-right: 5px #484848 solid;
+}
+.custom-hr {
+    /* position: relative; */
+    width: 90%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 5px;
+    height: 3px;
+    border-radius: 3px;
+}
+
+.important {
+    font-weight: bold;
+}
+
+.neutralize-link {
+    text-decoration: none;
+}
+
+.loading-container {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+}
+.loading-logo-l {
+    width: 150px;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 10px;
+    /* margin-top: 40vh; */
+    /* transform-origin: 48.1% 47.8%; */
+    transform: rotate(0deg);
+    animation: loading 2s ease-in-out 0s infinite normal;
+}
+.loading-title {
+    position: relative;
+    margin: 0;
+    font-size: 200%;
+}
+.loading-title-sm {
+    position: relative;
+    margin: 0;
+    font-size: 100%;
+}
+.red-dot {
+    position: absolute;
+    transform: translate(481px, 410px);
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: red;
+}
+.test {
+    color: blue;
+}
+
+@keyframes loading {
+    0% {transform: rotate(0deg)}
+    100% {transform: rotate(360deg)}
+}
+.referenceLink-wrapper {
+    display: flex;
+
+}
+.referenceLink-container {
+    margin-right: 0;
+    display: flex;
+    flex-direction: row;
+    border-radius: 3px;
+}
+.RL-icon {
+    width: 20px;
+    margin: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.RL-link {
+    width: 95%;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: white;
+    border-radius: 3px;
+}
+.navbar-height {
+    height: 49px;
+}
+
+.home-search-input {
+    padding-left: 5px;
+    border: none;
+    font-size: 15px;
+    background-color: white;
+    color: #282828;
+}
+.NM {
+    margin: 0;
+}
+.warning-container {
+    color: white;
+    background-color: rgb(226,184,59);
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+}
+.p-link {
+    background-color: #484848;
+    color: white;
+    padding-left: 10px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    padding-right: 10px;
+    border-radius: 20px;
+}
+.p-link:hover {
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+.search-suggestions-container {
+    position: relative;
+    grid-column: 1/5;
+    top: -15px;
+    z-index: 0;
+}
+.search-suggestions {
+    width: 100%;
+    color: #282828;
+    padding-top: 15px;
+    text-align: left;
+    background-color: white;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    display: grid;
+    grid-template-columns: 100%;
+    border-bottom: 2px solid #dfdfdf;
+}
+
+
+.form-wrapper {
+    width: 95%;
+    margin-left: 5%;
+}
+
+.form-container {
+    position: sticky;
+    top: 90px;
+    display: grid;
+    background-color: white;
+    border: 2px solid #eeeeee;
+    border-top-color: #282828;
+    text-align: start;
+}
+.expand-overlay {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-top-left-radius: 100px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.overlay-image {
+    padding-left: 20px;
+    padding-top: 20px;
+    width: 50px;
+    margin: auto;
+}
+.expanded-overlay {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-bottom-right-radius: 100px;
+    display: grid;
+    display: none;
+}
+.expanded-overlay:hover, .expand-overlay:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    transition: opacity 0.1s;
+}
+.overlay-image-expanded {
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 50px;
+    margin: auto;
+}
+.SWM {
+    display: none;
+}
+.HWM {
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+    .form-wrapper {
+        width: 100vw;
+        position: fixed;
+        bottom: 0;
+        right:0;
+        /* height: 80vh; */
+        min-height: 25vh;
+        display: grid;
+        justify-content: end;
+        overflow-y: scroll;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-wrapper-m {
+        width: 35vw;
+        position: fixed;
+        bottom: 0;
+        right:0;
+        /* height: 17vh; */
+        display: grid;
+        justify-content: end;
+        overflow-y: scroll;
+    }
+    
+    .form-container {
+        height: 100%;
+        position: relative;
+        width: 100vw;
+        display: grid;
+        background-color: white;
+        border: none;
+        border-top: 2px solid #282828;
+        text-align: start;
+    }
+    .SWM {
+        display: grid;
+    }
+    .HWM {
+        display: none;
+    }
+}
+
+.form-title {
+    text-align: start;
+}
+.form-title-secondary {
+    text-align: start;
+    opacity: 0.8;
+}
+.form-field-container {
+    display: grid;
+}
+.form-field {
+    width: 85%;
+    padding-left: 5px;
+    margin: auto;
+    height: 100px;
+    border: 2px solid #eeeeee;
+    margin-bottom: 10px;
+}
+.form-submit-button-container {
+    display: flex;
+    justify-content: flex-end;
+}
+.form-submit-button {
+    border: 2px solid #282828;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+}
+.form-submit-button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+.accepted-option {
+    background-color: rgb(52,166,95);
+    color: white;
+}
+.declined-option {
+    background-color: rgb(254,52,77);
+    color: white;
+}
+.pending-option {
+    background-color: rgb(226,184,59);
+    color: white;
+}

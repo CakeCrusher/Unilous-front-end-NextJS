@@ -1,0 +1,74 @@
+.UPContainer {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+@media only screen and (max-width: 800px) {
+    .UPContainer {
+        width: 95%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+}
+.UPPostsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 5px;
+}
+.UPTitleContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+}
+.UPTitleIcon {
+    width: 25px;
+    margin: auto;
+    margin-right: 10px
+}
+.UPTitle {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    text-align: start;
+}
+.UPRLContainer {
+    display: flex;
+    flex-direction: column;
+}
+.UPRL {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    margin-right: auto;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    overflow: hidden;
+}
+.UPRLIconContainer {
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 5px;
+    display: grid;
+}
+.UPRLicon {
+    width: 20px;
+    margin: auto;
+}
+.UPRLLink {
+    color: #282828;
+    background-color: white;
+    margin: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 3px;
+}
+.UPRLLink:hover {
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+
+.test {
+    background-color: palegreen;
+}

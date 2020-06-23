@@ -1,0 +1,376 @@
+.test {
+    color: red;
+}
+.postPageContainer {
+    margin: auto;
+    padding-top: 20px;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 65% 35%;
+}
+.homeOptions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+.homeOptionHighlight {
+    grid-column: 1/3;
+}
+@media only screen and (max-width: 800px) {
+    .postPageContainer {
+        margin: auto;
+        padding-top: 20px;
+        width: 90%;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .homeOptions {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-bottom: 10px;
+    }
+    .homeOptionHighlight {
+        grid-column: 1/2;
+    }
+}
+.PPContent {
+    text-align: start;
+}
+
+.homeOption {
+    width: 100%;
+    margin: auto;
+    border-radius: 50px;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+}
+.homeOption:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+.homeOptionIcon {
+    width: 20px;
+    margin: auto;
+    margin: 10px;
+    margin-right: 5px;
+}
+.homeOptionText {
+    margin: auto;
+}
+.PPCTitle {
+    text-align: start;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.PPCSubHeader {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: start;
+    margin: 20px;
+    margin-top: 0;
+    margin-left: 0;
+}
+.PPCUserContainer {
+    color: #282828;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    opacity: 0.7;
+    margin-right: 20px;
+}
+.PPCUserContainer:hover {
+    opacity: 0.6;
+    cursor: pointer;
+    transition: opacity 0.1s;
+}
+.PPCUserIcon {
+    width: 15px;
+    padding-right: 5px;
+    margin: auto;
+}
+.PPCTime {
+    opacity: 0.7;
+    margin: 0;
+}
+.PPCDescription {
+    /* margin: 0; */
+    margin-bottom: 20px;
+    opacity: 0.9;
+    white-space: pre-wrap;
+    line-height: 25px;
+}
+.PPCPicturesContainer {
+    margin: auto;
+    margin-bottom: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+}
+
+.PPCPicturesHighlight {
+    position: relative;
+    right: 0;
+    margin: auto;
+    border: 2px solid;
+    transition: width 0.1s;
+}
+
+.PPCAllPicturesContainer {
+    margin: auto;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.PPCPicturesInstance {
+    margin: 5px;
+    height: 70px;
+    background-color: white;
+    flex-shrink: 0;
+    border-radius: 3px;
+    border: 2px solid;
+}
+.PPCLinksContainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
+}
+.PPCReferenceLink {
+    color: white;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    opacity: 0.9;
+}
+.PPCReferenceLink:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+.PPCRLIcon {
+    width: 20px;
+    margin: auto;
+    padding-right: 10px;
+}
+
+.PPSideBarContainer {
+    width: 95%;
+    margin-left: 5%;
+
+}
+.PPSideBar {
+    /* background-color: #ddd; */
+    position: sticky;
+    top: 90px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #eeeeee;
+}
+/* .PPCAllQandaContainer {
+
+} */
+.PPCQandaContainer {
+    width: 100%;
+    background-color: #eeeef9;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.PPCQandaHeader {
+    color: #282828;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 0;
+    margin-right: auto;
+    justify-content: start;
+    padding: 10px;
+    opacity: 0.7;
+}
+.PPCQandaHeader:hover {
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.1s;
+}
+.PCCQandaContent {
+    padding: 10px;
+    padding-top: 0;
+    margin: 0;
+    opacity: 0.9;
+}
+.PCCAnswerToggle {
+    width: 100%;
+    background-color: #dddde9;
+    text-align: center;
+    font-weight: bold;
+    opacity: 0.9;
+}
+.PCCAnswerToggle:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+.PCCQandaAnswerContainer {
+    background-color: #dddde9;
+}
+.PPSideBar {
+    display: flex;
+    
+}
+.PPSFollowHeader {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-content: center;
+    margin-right: auto;
+    padding: 5px;
+}
+.PPSFollowHeader:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+.PPSDivision {
+    width: 100%;
+    height: 2px;
+    grid-column: 1/4;
+    background-color: #eeeeee;
+}
+.PPSSkill {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.PPSSkillName {
+    justify-self: start;
+    padding-left: 5px;
+    margin: auto;
+}
+.PPSSkillSecondary {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-self: end;
+}
+.PPSSkillInfo {
+    justify-self: end;
+    opacity: 0.8;
+    margin: auto;
+}
+.PPSButtonExit {
+    justify-self: end;
+    padding: 4px;
+    padding-left: 24.5px;
+    padding-right: 24.5px;
+    margin: 5px;
+    margin-left: 10px;
+    border-radius: 20px;
+    white-space: pre-wrap;
+    color: rgb(254,52,77);
+}
+.PPSButton {
+    justify-self: end;
+    border: 2px solid rgb(52,166,95);
+    color: rgb(52,166,95);
+    padding: 4px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin: 5px;
+    margin-left: 10px;
+    border-radius: 20px;
+    white-space: pre-wrap;
+}
+.PPSButtonSubmit {
+    justify-self: end;
+    border: 2px solid rgb(52,166,95);
+    background-color: rgb(52,166,95);
+    color: white;
+    padding: 4px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin: 5px;
+    margin-left: 10px;
+    border-radius: 20px;
+    white-space: pre-wrap;
+}
+.PPSButtonDisabled {
+    justify-self: end;
+    border: 2px solid #282828;
+    padding: 2px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin: 5px;
+    margin-left: 10px;
+    border-radius: 20px;
+    white-space: pre-wrap;
+    opacity: 0.5;
+}
+.PPSButton:hover, .PPSButtonExit:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.1s;
+}
+.PPSTitle {
+    margin-left: 5px;
+    margin-bottom: 10px
+}
+.PPSSkillForm {
+    grid-column: 1/4;
+    display: grid;
+    grid-template-columns: 100%;
+}
+.PPSInputContainer {
+    display: grid;
+}
+.PPSInput {
+    padding-left: 5px;
+    width: 85%;
+    height: 100px;
+    border: 2px solid #eeeeee;
+    margin: auto;
+    border-radius: 3px;
+    margin-bottom: 10px
+}
+.PPCSubmitContainer {
+    display: grid;
+    justify-content: end;
+}
+.PPCTeamContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-top: 10px
+}
+.PPCTeamMember {
+    color: #282828;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    opacity: 0.7;
+    margin-right: 20px;
+}
+.qandaText {
+    opacity: 0.8;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+.teamInfo {
+    opacity: 0.8;
+}
