@@ -373,4 +373,33 @@
 }
 .teamInfo {
     opacity: 0.8;
+    margin-bottom: 20px;
+}
+.teamTableContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: space-evenly;
+    border: 2px solid #282828;
+    border-radius: 3px;
+}
+.TTSkill {
+    grid-column: 1/3;
+    margin: 0;
+    padding: 8px 15px;
+    background-color: #282828;
+    color: white;
+    text-align: start;
+}
+.TTTeamMemberContainer {
+    color: #282828;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 5px;
+    justify-content: start;
+    align-items: center;
+    margin: 10px auto;
+}
+.TTUserIcon {
+    width: 25px;
+    margin: auto;
 }

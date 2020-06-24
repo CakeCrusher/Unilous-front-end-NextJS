@@ -121,22 +121,46 @@ export const FIND_PROJECT = gql`
           image
         }
       }
-      skills{
-        skill{
-          name
-        }
-        skill_help_needed
-        collaborators{
-          username
-        }
-        _id
-      }
       time
       color
       _id
     }
   }
 `
+
+// export const FIND_PROJECT = gql`
+//   query findPost($title: String!){
+//     findPost(title: $title){
+//       title,
+//       user {
+//         username
+//         _id
+//       }
+//       content {
+//         __typename
+//         ... on ContentText {
+//           text
+//         }
+//         ... on ContentImage {
+//           image
+//         }
+//       }
+//       skills{
+//         skill{
+//           name
+//         }
+//         skill_help_needed
+//         collaborators{
+//           username
+//         }
+//         _id
+//       }
+//       time
+//       color
+//       _id
+//     }
+//   }
+// `
 
 export const SKILL_SEARCH = gql`
   query skillSearch($filter: String!) {

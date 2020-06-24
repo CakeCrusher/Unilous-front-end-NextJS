@@ -50,28 +50,51 @@ const PostPage = withRouter((props) => {
     let cleanedTime = new Date(Number(props.post.time))
     cleanedTime = cleanedTime.toString().split(' ')
     cleanedTime = cleanedTime.slice(1,3).join(' ') + ', ' + cleanedTime[3]
-
-    const skillsHTML = []
+    // skills{
+    //     skill{
+    //         name
+    //     }
+    //     skill_help_needed
+    //     collaborators{
+    //         username
+    //     }
+    //     _id
+    // }
+    const skillsData = {
+        skills: [
+            {
+                skill: {name: "job1"},
+                skill_help_needed: 3,
+                collaborators: [
+                    {username: "John"},
+                    {username: "Sam"},
+                ]
+            },
+            {
+                skill: {name: "job2"},
+                skill_help_needed: 2,
+                collaborators: [
+                    {username: "Don"},
+                ]
+            },
+        ]
+    }
     const questionStyle = skillExpanded ? {display: 'none'} : {display: 'block'}
-    for (const ins in props.post.skillNames) {
-        const skillName = props.post.skillNames[ins]
-        const skillFill = props.post.skillFills[ins]
-        const skillCap = props.post.skillCapacities[ins]
-        const messageStyle = skillExpanded === skillName ? {display: 'block'} : {display: 'none'}
-        const buttonToShown = skillExpanded === skillName ?
+    const skillsHTML = skillsData.skills.map(sb => {
+        const messageStyle = skillExpanded === sb.skill.name ? {display: 'block'} : {display: 'none'}
+        const buttonToShown = skillExpanded === sb.skill.name ?
             <h4 onClick={() => setSkillExpanded(null)} className={ppStyle.PPSButtonExit}>X</h4>
             :
-            skillFill < skillCap ?
-                <h4 onClick={() => setSkillExpanded(skillName)} className={ppStyle.PPSButton}>join</h4>
+            sb.collaborators.length < sb.skill_help_needed ?
+                <h4 onClick={() => setSkillExpanded(sb.skill.name)} className={ppStyle.PPSButton}>join</h4>
                 :
                 <h4 className={ppStyle.PPSButtonDisabled}>join</h4>
-
-        skillsHTML.push( 
-            <div className={ppStyle.PPSSkill} key={`PPSS${skillName}`}>
+        return (
+            <div className={ppStyle.PPSSkill} key={`PPSS${sb.skill.name}`}>
                 <div className={ppStyle.PPSDivision} />
-                <p className={ppStyle.PPSSkillName}>{skillName}</p>
+                <p className={ppStyle.PPSSkillName}>{sb.skill.name}</p>
                 <div className={ppStyle.PPSSkillSecondary}>
-                    <p className={ppStyle.PPSSkillInfo}>{skillFill}/{skillCap}</p>
+                    <p className={ppStyle.PPSSkillInfo}>{sb.skill_help_needed}/{sb.collaborators.length}</p>
                     {buttonToShown}
                 </div>
                 <div className={ppStyle.PPSSkillForm} style={messageStyle}>
@@ -85,6 +108,63 @@ const PostPage = withRouter((props) => {
                         <h4 className={ppStyle.PPSButtonSubmit}>join</h4>
                     </div>
                 </div>
+            </div>
+        )
+    })
+    // const skillsHTML = []
+    // const questionStyle = skillExpanded ? {display: 'none'} : {display: 'block'}
+    // for (const ins in props.post.skillNames) {
+    //     const skillName = props.post.skillNames[ins]
+    //     const skillFill = props.post.skillFills[ins]
+    //     const skillCap = props.post.skillCapacities[ins]
+    //     const messageStyle = skillExpanded === skillName ? {display: 'block'} : {display: 'none'}
+    //     const buttonToShown = skillExpanded === skillName ?
+    //         <h4 onClick={() => setSkillExpanded(null)} className={ppStyle.PPSButtonExit}>X</h4>
+    //         :
+    //         skillFill < skillCap ?
+    //             <h4 onClick={() => setSkillExpanded(skillName)} className={ppStyle.PPSButton}>join</h4>
+    //             :
+    //             <h4 className={ppStyle.PPSButtonDisabled}>join</h4>
+
+    //     skillsHTML.push( 
+    //         <div className={ppStyle.PPSSkill} key={`PPSS${skillName}`}>
+    //             <div className={ppStyle.PPSDivision} />
+    //             <p className={ppStyle.PPSSkillName}>{skillName}</p>
+    //             <div className={ppStyle.PPSSkillSecondary}>
+    //                 <p className={ppStyle.PPSSkillInfo}>{skillFill}/{skillCap}</p>
+    //                 {buttonToShown}
+    //             </div>
+    //             <div className={ppStyle.PPSSkillForm} style={messageStyle}>
+    //                 <div className={ppStyle.PPSTitle}>
+    //                     <InputHeader inputFor="PPS-message" info={false} title="message" color="white" />
+    //                 </div>
+    //                 <div className={ppStyle.PPSInputContainer}>
+    //                     <textarea className={ppStyle.PPSInput} id="PPS-message" {...message.fields}></textarea>
+    //                 </div>
+    //                 <div className={ppStyle.PPCSubmitContainer}>
+    //                     <h4 className={ppStyle.PPSButtonSubmit}>join</h4>
+    //                 </div>
+    //             </div>
+    //         </div>
+    //     )
+    // }
+    const teamTable = () => {
+        const teamContent = skillsData.skills.map(s => (
+            <React.Fragment>
+                <h3 className={ppStyle.TTSkill}>{s.skill.name}</h3>
+                {s.collaborators.map(c => (
+                    <Link href="/user/[username]" as={`/user/${encodeURIComponent(c.username)}`}>
+                        <a className={`${ppStyle.TTTeamMemberContainer} neutralize-link`}>
+                            <img className={ppStyle.TTUserIcon} src='/svg/astronaut.svg' alt="user" />
+                            <p className="NM">{c.username}</p>
+                        </a>
+                    </Link>
+                ))}
+            </React.Fragment>
+        ))
+        return (
+            <div className={ppStyle.teamTableContainer}>
+                {teamContent}
             </div>
         )
     }
@@ -153,7 +233,8 @@ const PostPage = withRouter((props) => {
                         <div className={ppStyle.qandaText}>no question and answer pairs yet</div>
                     </div>
                     <h3 className={ppStyle.PPCTitle}>team</h3>
-                    <div className={ppStyle.teamInfo}>{props.post.team.length} team members</div>
+                    <div className={ppStyle.teamInfo}>{skillsData.skills.reduce((t, s) => t + s.collaborators.length, 0)} team members</div>
+                    {teamTable()}
                     <div style={{marginBottom: '50px'}} />
                 </div>
                 <FormContainer pallette={pallette}>

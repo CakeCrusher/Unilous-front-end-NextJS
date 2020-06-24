@@ -1,4 +1,6 @@
 Do next (now)
+    I need to prepare new notifications for when the back-end is ready
+
     the interface content needs a datatype that I can add
 
     add functionality to newpostformpage
