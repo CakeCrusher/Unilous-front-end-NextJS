@@ -18,7 +18,7 @@ let PostFormPage = (props) => {
     const [image, setImage] = useState('')
     const [contentList, setContentList] = useState([])
     const [contentTypeList, setContentTypeList] = useState([])
-    const [addContent, setAddContent] = useState(false)
+    const [addContent, setAddContent] = useState(true)
     const [skillName, setSkillName] = useState('')
     const [skillAmt, setSkillAmt] = useState('')
     const [skillNameList, setSkillNameList] = useState([])
@@ -62,28 +62,35 @@ let PostFormPage = (props) => {
             <button onClick={() => onTextSet()} className={pfPage.textSetButton}>set</button>
         </div>
 
-    const showContentOption = addContent ?
-        addContent === 'text' ?
-            textAreaToShow
-            :
-            <div className={pfPage.projectImageWrapper}>
-                <div className={pfPage.projectImageContainer}>
-                    <UploadImage onSuccess={onImageSet} />
-                </div>
-            </div>
-        : null
+    const showContentOption = () => {
+        switch (addContent) {
+            case 'text' :
+                return textAreaToShow
+            case 'image' :
+                return (
+                    <div className={pfPage.projectImageWrapper}>
+                        <div className={pfPage.projectImageContainer}>
+                            <UploadImage onSuccess={onImageSet} />
+                        </div>
+                    </div>
+                )
+            default :
+                return null
+        }
+    }
 
-    const showContentButtons = addContent ? null :
+    const showContentButtons = addContent === true ?
         <div className={pfPage.inputOptionsContainer}>
             <button onClick={() => setAddContent('text')} className={pfPage.inputOption}>
-                <img src="/svg/textW.svg" className={pfPage.inputIcon} />
+                <img src="/svg/textB.svg" className={pfPage.inputIcon} />
                 <h3>add text</h3>
             </button>
             <button onClick={() => setAddContent('image')} className={pfPage.inputOption}>
-                <img src="/svg/imageUploadW.svg" className={pfPage.inputIcon} />
+                <img src="/svg/imageUploadB.svg" className={pfPage.inputIcon} />
                 <h3>add image</h3>
             </button>
         </div>
+        : null
 
     const contentHTML = () => {
         let content = []
@@ -234,8 +241,13 @@ let PostFormPage = (props) => {
                                 <p className={ppStyle.PPCTime}>{cleanedTime}</p>
                             </div>
                             {contentHTML()}
-                            {showContentOption}
+                            {showContentOption()}
                             {showContentButtons}
+                            <div className={pfPage.addContentContainer}>
+                                <button onClick={() => setAddContent(true)} className={pfPage.ACButton}>
+                                    <img src="/svg/plusW.svg" className={pfPage.ACIcon} />
+                                </button>
+                            </div>
                             <h3 className={ppStyle.PPCTitle}>Q and A</h3>
                             <div className={ppStyle.PPCAllQandaContainer}>
                                 <div className={ppStyle.qandaText}>no question and answer pairs yet</div>
@@ -250,6 +262,7 @@ let PostFormPage = (props) => {
                             <div className={PFP.PFInputColors}>
                                 {colorsHTML}
                             </div>
+    <button onClick={() => submitProject()} className={pfPage.submitButton}><h2>submit "{title}"</h2></button>
                         </div>
                         <FormContainer pallette={pallette}>
                             <div  className={ppStyle.PPSFollowHeader} >
@@ -268,7 +281,6 @@ let PostFormPage = (props) => {
                         </FormContainer>
                     </div>
                     {/* <div className={pfPage.submitPadding} /> */}
-                    <button onClick={() => submitProject()} className={pfPage.submitButton}><h3>submit</h3></button>
                 </Layout>
             </div>
         </div>

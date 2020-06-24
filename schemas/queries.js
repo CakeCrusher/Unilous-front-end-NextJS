@@ -121,11 +121,17 @@ export const FIND_PROJECT = gql`
           image
         }
       }
-      skillNames
-      skillCapacities
-      skillFills
+      skills{
+        skill{
+          name
+        }
+        skill_help_needed
+        collaborators{
+          username
+        }
+        _id
+      }
       time
-      team
       color
       _id
     }
