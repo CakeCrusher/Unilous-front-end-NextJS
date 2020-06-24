@@ -1,0 +1,49 @@
+.notifContainer {
+    width: 95%;
+    border-radius: 3px;
+    background-color: white;
+    margin: auto;
+    color: #282828;
+    margin-bottom: 10px;
+    display: grid;
+}
+.notifContainer:hover {
+    opacity: 0.85;
+    transition: opacity 0.1s;
+}
+.iconNamePair {
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: center;
+    column-gap: 5px;
+}
+.userIcon {
+    width: 25px;
+    margin: auto;
+}
+.userUsername {
+    margin: 10px 0;
+}
+.message {
+    text-align: start;
+    padding-left: 10px;
+}
+.typeTitle {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.joinIcon {
+    width: 25px;
+}
+.questionIcon {
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.date {
+    opacity: 0.7;
+    text-align: end;
+    padding: 5px;
+}
