@@ -373,22 +373,24 @@
 }
 .teamInfo {
     opacity: 0.8;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .teamTableContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: space-evenly;
-    border: 2px solid #282828;
-    border-radius: 3px;
+    padding-left: 20px;
 }
 .TTSkill {
-    grid-column: 1/3;
     margin: 0;
-    padding: 8px 15px;
-    background-color: #282828;
-    color: white;
+    padding: 8px 0;
+    color: #282828;
     text-align: start;
+    font-weight: bold;
+}
+.collaboratorsContainer {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
+    row-gap: 15px;
+    column-gap: 30px;
 }
 .TTTeamMemberContainer {
     color: #282828;
@@ -397,7 +399,7 @@
     column-gap: 5px;
     justify-content: start;
     align-items: center;
-    margin: 10px auto;
+    margin: 10px 0;
 }
 .TTUserIcon {
     width: 25px;

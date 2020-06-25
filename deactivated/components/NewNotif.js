@@ -36,7 +36,6 @@ const Notif = (props) => {
                     <p className={NS.typeTitle}>{n.type}</p>
                     <PostSmall post={n.post} />
                     <p className={NS.message}>{n.message}</p>
-                    
                 </div>
             </a>
         </Link>

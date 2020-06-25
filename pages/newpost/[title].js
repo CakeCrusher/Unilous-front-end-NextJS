@@ -151,15 +151,17 @@ const PostPage = withRouter((props) => {
     const teamTable = () => {
         const teamContent = skillsData.skills.map(s => (
             <React.Fragment>
-                <h3 className={ppStyle.TTSkill}>{s.skill.name}</h3>
-                {s.collaborators.map(c => (
-                    <Link href="/user/[username]" as={`/user/${encodeURIComponent(c.username)}`}>
-                        <a className={`${ppStyle.TTTeamMemberContainer} neutralize-link`}>
-                            <img className={ppStyle.TTUserIcon} src='/svg/astronaut.svg' alt="user" />
-                            <p className="NM">{c.username}</p>
-                        </a>
-                    </Link>
-                ))}
+                <h3 className={ppStyle.TTSkill}>{s.skill.name} ({s.collaborators.length})</h3>
+                <div className={ppStyle.collaboratorsContainer}>
+                    {s.collaborators.map(c => (
+                        <Link href="/user/[username]" as={`/user/${encodeURIComponent(c.username)}`}>
+                            <a className={`${ppStyle.TTTeamMemberContainer} neutralize-link`}>
+                                <img className={ppStyle.TTUserIcon} src='/svg/astronaut.svg' alt="user" />
+                                <p className="NM">{c.username}</p>
+                            </a>
+                        </Link>
+                    ))}
+                </div>
             </React.Fragment>
         ))
         return (
@@ -232,7 +234,7 @@ const PostPage = withRouter((props) => {
                     <div className={ppStyle.PPCAllQandaContainer}>
                         <div className={ppStyle.qandaText}>no question and answer pairs yet</div>
                     </div>
-                    <h3 className={ppStyle.PPCTitle}>team</h3>
+                    <h3 className={ppStyle.PPCTitle} style={{opacity: 0.8}}>team</h3>
                     <div className={ppStyle.teamInfo}>{skillsData.skills.reduce((t, s) => t + s.collaborators.length, 0)} team members</div>
                     {teamTable()}
                     <div style={{marginBottom: '50px'}} />
