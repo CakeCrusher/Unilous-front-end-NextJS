@@ -167,7 +167,7 @@
 .postWrapperSm {
     width: 95%;
     margin: auto;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     display: grid;
     grid-template-columns: 8px auto 20px;
     background-color: white;
