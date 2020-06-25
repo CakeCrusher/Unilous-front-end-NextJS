@@ -133,27 +133,19 @@ let PostFormPage = (props) => {
 
     const skillButton = addSkill ?
         <button onClick={() => onSkillSet()} className={pfPage.skillInputButton}>
-            <h3>set</h3>
+            <p className={pfPage.skillButtonTitle}>set</p>
         </button>
         :
         <button onClick={() => setAddSkill(true)} className={pfPage.skillInputButton}>
-            <img src="/svg/plusW.svg" className={pfPage.inputIcon} />
-            <h3>add skill</h3>
+            <p className={pfPage.skillButtonTitle}>add skill</p>
         </button>
 
     const skillInputs = addSkill ?
         <React.Fragment>
             <div className={ppStyle.PPSDivision} />
-            <div className={pfPage.skillInputContainer}>
-                <p className={pfPage.skillNameContainer}>
-                    <input className={pfPage.skillInput} type="text" value={skillName} onChange={(e) => onSkillNameChange(e)} placeholder="name of skill" />
-                </p>
-                <div className={pfPage.skillAmtContainer}>
-                    <p className={ppStyle.PPSSkillInfo}>
-                            <input className={pfPage.skillAmtInput} type="number" value={skillAmt} onChange={(e) => onSkillAmtChange(e)} placeholder="amount of help" />
-                    </p>
-                    <h4 className={ppStyle.PPSButton}>join</h4>
-                </div>
+            <div className={pfPage.skillInputsContainer}>
+                <input className={pfPage.skillInputName} type="text" value={skillName} onChange={(e) => onSkillNameChange(e)} placeholder="name of skill" />
+                <input className={pfPage.skillInputAmt} type="number" value={skillAmt} onChange={(e) => onSkillAmtChange(e)} placeholder="amount of help" />
             </div>
         </React.Fragment>
         :

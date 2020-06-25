@@ -199,6 +199,37 @@
     margin-bottom: 20px;
     border: none;
   }
+
+/*----------------------------*/
+/*----------SIDEBAR-----------*/
+/*----------------------------*/
+.skillInputsContainer {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    justify-content: center;
+    column-gap: 15px;
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+}
+.skillInputName {
+    border: 1px solid #484848;
+    padding: 5px 0;
+    font-size: 16px;
+    border-radius: 3px;
+    width: 100%;
+}
+.skillInputAmt {
+    border: 1px solid #484848;
+    padding: 5px 0;
+    font-size: 16px;
+    border-radius: 3px;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+    transform: translateX(-4px);
+    width: 100%;
+}
 .skillInputButton {
     grid-column: 1/3;
     display: flex;
@@ -206,61 +237,20 @@
     justify-content: center;
     align-items: center;
     column-gap: 5px;
-    font-size:20px;
-    width: 100%;
-    background-color: rgb(52,166,95);
+    font-size:18px;
+    width: 95%;
+    background-color: #484848;
     color: white;
     border: none;
-    margin: 0;
+    border-radius: 3px;
+    margin: 5px auto;
     padding: 0;
 }
-/*----------------------------*/
-/*----------SIDEBAR-----------*/
-/*----------------------------*/
+.skillButtonTitle {
+    margin: 5px auto;
+    font-weight: bold;
+}
 
-.skillInput {
-    width: 100%;
-    font-size: 16px;
-    margin: 0;
-    border: 2px dashed #282828;
-    transform: translateX(-2px);
-}
-.skillAmtContainer {
-    display: flex;
-    flex-direction: row;
-    justify-items: end;
-}
-.outOf {
-    background-color: blue;
-}
-.skillAmtInput {
-    width: 100%;
-    -webkit-appearance: none;
-    -moz-appearance: textfield;
-    justify-self: end;
-    text-align: end;
-    font-size: 16px;
-    border: none;
-    margin: 0;
-    border: 2px dashed #282828;
-    transform: translateX(-2px);
-}
-.skillInputContainer {
-    grid-column: 1/3;
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    align-items: center;
-}
-.skillNameContainer {
-    width: 80%;
-    margin: 0;
-    pad: 0;
-}
-.skillAmtContainer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr auto;
-}
 @media only screen and (max-width: 800px) {
     .skillAmtContainer {
         column-gap: 10px;
