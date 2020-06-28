@@ -5,9 +5,7 @@
 }
 @media only screen and (max-width: 800px) {
   .wrapper {
-    width: 104%;
-    display: flex;
-    justify-content: none;
+    width: 100%;
   }
 }
 .container {
@@ -68,9 +66,7 @@
 @media only screen and (max-width: 800px) {
   .rowContainer {
     width: 100%;
-    display: grid;
     grid-template-columns: 1fr;
-    column-gap: 0px;
   }
 }
 .card {
@@ -89,10 +85,6 @@
     .card {
         width: 85%;
         height: 90%;
-        border-radius: 5px;
-        display: flex;
-        flex-flow: column;
-        padding: 10px;
         margin: auto;
     }
 }
@@ -147,11 +139,7 @@
 }
 @media only screen and (max-width: 800px) {
   .imageBox {
-    display: flex;
-    align-content: center;
     justify-self: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
   }
 }
 
@@ -179,8 +167,7 @@
 }
 @media only screen and (max-width: 800px) {
   .adjacentHalfWidthButtons {
-    width: 100%; 
-    margin: 0px 2px;
+    width: 100%;
   }
 }
 

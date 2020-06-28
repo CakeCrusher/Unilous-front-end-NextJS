@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column;
   height: 100vh;
-  width: 250px;
+  width: 100%;
   background-color: #f1f1f4;
   text-align: left;
 }
@@ -61,14 +61,20 @@
 }
 .viewButton {
   width: 100%;
+  text-align: center;
   background-color: #f1f1f4;
   font-size: 16px;
   border: 2px solid #282828;
+  color: #282828;
   border-radius: 3px;
   line-height: 40px;
   cursor: pointer;
   margin-bottom: 10px;
   font-weight: bold;
+}
+.buttonSelected {
+  background-color: #282828;
+  color: #f1f1f4;
 }
 
 .categoryTitle {

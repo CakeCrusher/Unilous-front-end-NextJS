@@ -1,4 +1,9 @@
 Do next (now)
+    create categorized users and simple user list
+    create dashboard index
+    create on click dashboard post
+    create on click dashboard user
+
     I need to prepare new notifications for when the back-end is ready
 
     the interface content needs a datatype that I can add
