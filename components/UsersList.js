@@ -5,6 +5,7 @@ import PSS from '../styles/profileSidebar.module.css'
 import {palletteGenerator} from '../functions/functions'
 
 const UsersList = (props) => {
+    console.log(props.filter)
     const userData = () => {
         switch (props.filter) {
             case 'in_my_projects':
@@ -30,7 +31,7 @@ const UsersList = (props) => {
                 projects: [1,2,3]
             }))
             const allUsersHTML = usersMaker.map(u => (
-                <div className={DS.userContainer}>
+                <div className={DS.usersContainer}>
                     <img src={u.profilePicture} className={PSS.avatar} />
                     <div>
                         <h2 className={PSS.username}>{u.username}</h2>
@@ -80,7 +81,7 @@ const UsersList = (props) => {
                 }
 
                 const usersInProjectHTML = allUsersInProject.map(u => (
-                    <div className={DS.userContainer}>
+                    <div className={DS.usersContainer}>
                         <img src="https://pixy.org/src/60/604186.png" className={PSS.avatar} />
                         <div>
                             <h2 className={PSS.username}>{u.username}</h2>
@@ -89,7 +90,7 @@ const UsersList = (props) => {
                     </div>
                 ))
                 return(
-                    <div className={DS.projectWithUserContainer} style={containerStyle}>
+                    <div className={DS.projectWithUsersContainer} style={containerStyle}>
                         <h2 className={DS.UCTitle}>{p.title}</h2>
                         <div className={DS.usersInProjectContainer} style={{borderColor: colorPallette.color}}>
                             {usersInProjectHTML}

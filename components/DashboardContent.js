@@ -5,6 +5,7 @@ import UsersList from './UsersList'
 
 const DashboardContent = (props) => {
     if (typeof window === 'undefined' || !props.currentUser) {
+        console.log(props.action)
         return null
     } else {
         switch (props.action) {
@@ -17,6 +18,7 @@ const DashboardContent = (props) => {
             case 'projects_others':
                 return <ProjectsList filter="others" />
             case 'users_in_my_projects':
+                console.log('returning user list')
                 return <UsersList filter="in_my_projects" />
             case 'users_invited':
                 return <UsersList filter="invited" />

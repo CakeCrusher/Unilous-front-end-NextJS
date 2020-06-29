@@ -24,13 +24,13 @@
     column-gap: 20px;
     row-gap: 20px;
 }
-.userContainer {
+.usersContainer {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
     justify-self: center;
 }
-.projectWithUserContainer {
+.projectWithUsersContainer {
     padding: 10px;
     border: 2px solid;
     width: 90%;
@@ -45,4 +45,186 @@
     border: 2px solid;
     padding: 5px;
     border-radius: 3px;
+}
+.userContainer {
+    width: 50%;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 10px;
+}
+.userProjectRelationContainer {
+    width: 100%;
+    display: grid;
+    /* justify-content: center; */
+}
+.userBanner {
+    grid-column: 1/3;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+.inviteButton {
+    width: 100%;
+    color: #282828;
+    border: 2px solid #282828;
+    background-color: #fdfdfd;
+    border-radius: 3px;
+}
+.invitedProjectContainer {
+    opacity: 0.8;
+    margin: 10px 0;
+}
+.chatContainer {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 2px solid #282828;
+    border-radius: 3px;
+}
+.chatToBanner {
+    width: 100%;
+    justify-self: start;
+    background-color: #737373;
+    border-bottom: 2px solid #535353;
+    color: white;
+    text-align: start;
+    height: 80px;
+}
+.chatFromBanner {
+    background-color: #008026;
+    border-bottom: 2px solid #006006;
+    color: white;
+    padding-right: 10px;
+    display: grid;
+    justify-content: end;
+    height: 80px;
+}
+.messagesContainer {
+    position: relative;
+    grid-column: 1/3;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
+}
+.sendMessage {
+    position: absolute;
+    bottom: 0;
+    align-self: end;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 50px;
+}
+.sendMessageInput {
+    background-color: #ddd;
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+    border: none;
+}
+.sendMessageSend {
+    background-color: rgb(52,166,95);
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    border: none;
+}
+.projectContainer {
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.projectHead {
+    grid-column: 1/3;
+    width: 50%;
+    margin: auto;
+    margin-top: 10px;
+}
+.projectCategoryContainer {
+    width: 100%;
+    border: 2px solid #282828;
+    border-radius: 3px;
+    display: grid;
+    row-gap: 10px;
+}
+.categoryTitle {
+    text-align: centers;
+    width: 100%;
+    background-color: #282828;
+    margin: 0;
+    color: white;
+    padding: 5px 0;
+    /* padding: 10px; */
+}
+.categoryInsContainer {
+    border: 2px solid #282828;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+.categoryContent {
+    grid-column: 1/3;
+}
+.userIconPair {
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: 20px auto;
+    column-gap: 5px;
+}
+.userIcon {
+    width: 20px;
+    margin: auto;
+}
+.username {
+    margin: 10px 0;
+}
+.skillToJoinContainer {
+    padding: 0 10px;
+}
+.skill {
+    background-color: #383838;
+    color: white;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+.message {
+    padding: 0 10px;
+}
+.acceptButton {
+    background-color: rgb(52,166,95);
+    border: 2px solid rgb(42,156,85);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+}
+.declineButton {
+    background-color: rgb(254,52,77);
+    border: 2px solid rgb(244,42,67);
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px;
+    color: white;
+}
+.declinedResponse {
+    background-color: rgb(254,52,77);
+    grid-column: 1/3;
+    padding: 5px 10px;
+    margin: 0;
+    color: white;
+}
+.acceptedResponse {
+    background-color: rgb(52,166,95);
+    grid-column: 1/3;
+    padding: 5px 10px;
+    margin: 0;
+    color: white;
 }
