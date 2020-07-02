@@ -260,3 +260,13 @@
 .test {
     background-color: blue;
 }
+.uploadImageContainer {
+    width: 50%;
+    margin: 10px auto;
+    height: 200px;
+}
+@media only screen and (max-width: 800px) {
+    .uploadImageContainer {
+        width: 100%;
+    }
+}

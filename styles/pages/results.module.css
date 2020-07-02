@@ -90,13 +90,13 @@
     display: grid;
 }
 .resultsContainer {
-    width: 60%;
+    width: 50%;
     margin: auto;
     display: grid;
 }
 @media only screen and (max-width: 800px) {
     .resultsContainer {
-        width: 95%;
+        width: 100%;
         margin: auto;
         display: grid;
     }
@@ -108,15 +108,21 @@
 .resOptionsContainer {
     width: 100%;
     display: grid;
-    grid-template-columns: 400px auto;
+    grid-template-columns: auto auto;
     flex-direction: row;
+}
+@media only screen and (max-width: 800px) {
+    .resOptionsContainer {
+        padding: 5px;
+    }
 }
 .SFContainer {
     display: grid;
-    grid-template-columns: 200px 200px;
+    grid-template-columns: 1fr 1fr;
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .SFOption {
     color: #282828;
     margin: 0;
@@ -144,7 +150,13 @@
 .layoutWrapper {
     justify-self: end;
     border-radius: 3px;
-    margin: 5px;
+    margin: auto 0;
+}
+@media only screen and (max-width: 800px) {
+    .layoutWrapper {
+        display: none;
+        margin: auto;
+    }
 }
 .layoutWrapper:hover {
     cursor: pointer;
@@ -206,13 +218,6 @@
     width: 95%;
     margin-left: 5%;
 
-}
-
-@media only screen and (max-width: 800px) {
-    /* .resultsContent {
-        width: 80%;
-        margin: auto;
-    } */
 }
 
 .homeUsersContainer {

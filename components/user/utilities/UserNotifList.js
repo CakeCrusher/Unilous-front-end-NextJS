@@ -131,6 +131,7 @@ const UserNotifList = (props) => {
         }
         return null
     }).reverse()
+    console.log(props.currentUser.notifications.length)
     return (
         <div className="userUtil-notif">
             <Filter />

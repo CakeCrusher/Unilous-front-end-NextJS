@@ -10,6 +10,7 @@ const UploadImage = (props) => {
     const uploadToImgur = (file) => {
         const onImageSuccess = (link) => {
             props.onSuccess(link)
+            setImageFile(null)
         }
         var xhr = new XMLHttpRequest();
         xhr.responseType = 'json';

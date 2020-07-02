@@ -86,7 +86,9 @@ const HomePage = (props) => {
             </Head>
             <div className="navbar-height" />
             <div className={HP.wrapper} style={{backgroundColor: '#282828'}}>
-                <img className={HP.starsSVG} src="/svg/stars.svg"/>
+                <div className={HP.starsContainer}>
+                    <img className={HP.starsSVG} src="/svg/stars.svg"/>
+                </div>
                 <div className={HP.rowContainer} style={{color: 'white'}}>
                     <div className={`${HP.textBox} ${HP.narrow}`}>
                         <h1 className={HP.leftAlign}>Build your team, create your project</h1>

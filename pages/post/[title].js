@@ -170,7 +170,7 @@ const PostPage = withRouter((props) => {
                         <textarea className={ppStyle.PPSInput} id="PPS-message" {...message.fields}></textarea>
                     </div>
                     <div className={ppStyle.PPCSubmitContainer}>
-                        {<h4 onClick={() => handleNotification(skillProposition)} className={ppStyle.PPSBButton} style={{borderColor: currentPost.color}}>join</h4>}
+                        {<h4 onClick={() => handleNotification(skillProposition)} className={ppStyle.PPSButtonSubmit}>join</h4>}
                     </div>
                 </div>
             </div>
@@ -292,7 +292,7 @@ const PostPage = withRouter((props) => {
                             <textarea className={ppStyle.PPSInput} id="PPS-question" {...question.fields}></textarea>
                         </div>
                         <div className={ppStyle.PPCSubmitContainer}>
-                            <h4 onClick={() => handleQuestion()} className={ppStyle.PPSButton} style={{borderColor: currentPost.color}}>ask</h4>
+                            <h4 onClick={() => handleQuestion()} className={ppStyle.PPSButtonSubmit}>ask</h4>
                         </div>
                     </div>
                 </FormContainer>

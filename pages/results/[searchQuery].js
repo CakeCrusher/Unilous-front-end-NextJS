@@ -143,7 +143,7 @@ const Results = withRouter((props) => {
                 <title>Browse for projects in Unilous</title>
                 <meta name="description" content={descriptionToShow()} key="description"/>
             </Head>
-            <div className="home-wrapper">
+            <div className={resStyle.homeWrapper}>
                 <div className={resStyle.resultsContainer}>
                     <div className="navbar-height"/>
                     {/* <h2 className={resStyle.secondaryTitle}>events</h2>
@@ -167,10 +167,10 @@ const Results = withRouter((props) => {
                         </div>
                     </div>
                     <div />
-                    <div className={`resultsContent ${layoutClass}`}>
+                    <div className={layoutClass}>
                         {showUsersOrProject}
                     </div>
-                    <div style={{position: 'relative', height: '400px'}}>
+                    <div style={{position: 'relative', height: '200px'}}>
                         {showLoading}
                     </div>
                 </div>

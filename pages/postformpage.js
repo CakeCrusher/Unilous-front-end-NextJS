@@ -12,6 +12,7 @@ import Router from 'next/router'
 import {bindActionCreators} from 'redux'
 import Layout from '../components/Layout'
 import Head from 'next/head'
+import UploadImage from '../components/UploadImage'
 
 let PostFormPage = (props) => {
     const title = useField('text')
@@ -164,6 +165,9 @@ let PostFormPage = (props) => {
             setImageLinkList(imageLinkList.concat(imageLink))
             setImageLink('')
         }
+    }
+    const newAddImage = (url) => {
+        setImageLinkList(imageLinkList.concat(url))
     }
 
     const removeRL = (ind) => {
@@ -328,8 +332,11 @@ let PostFormPage = (props) => {
                             {groupCommType()}
                         </div>
                         <InputHeader info={false} title="images" color="white" inputFor="PF-imageLinks" />
-                        <input className={PFP.PFSearchInput} type="url" placeholder="image link" id="PF-imageLinks" value={imageLink} onChange={(e) => setImageLink(e.target.value)} style={{marginBottom: 0}} />
-                        <h4 onClick={() => addImage()} className={`${PFP.PFFieldSubmit} standard-hover`}>add image</h4>
+                        {/* <input className={PFP.PFSearchInput} type="url" placeholder="image link" id="PF-imageLinks" value={imageLink} onChange={(e) => setImageLink(e.target.value)} style={{marginBottom: 0}} />
+                        <h4 onClick={() => addImage()} className={`${PFP.PFFieldSubmit} standard-hover`}>add image</h4> */}
+                        <div className={PFP.uploadImageContainer}>
+                            <UploadImage onSuccess={newAddImage} />
+                        </div>
                         <div className={PFP.PFImagesContainer}>
                             {imagesHTML()}
                         </div>
