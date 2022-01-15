@@ -18,7 +18,7 @@
     "graphql": "^14.6.0",
     "graphql-tag": "^2.10.1",
     "isomorphic-unfetch": "^3.0.0",
-    "marked": "^1.1.0",
+    "marked": "^4.0.10",
     "next": "^9.4.0",
     "next-apollo": "^4.0.1",
     "next-redux-wrapper": "^6.0.0-rc.7",
